@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intro_javascript</title>
+</head>
+<body>
+    <h2>Vamos fazer nosso primeiro script rodar</h2>
+    <p id="teste"> Onde estou?</p>
+    <button type="button" onclick='document.getElementById("teste").innerHTML = "Amo meu amor"'>Traga uma frase gratiluz</button>
+<!--Este codigo eu clico no botão e muda a frase que está com o id assim que clicar no botão (muda seu inner do html"texto interno") -->
+<!--Ele permite que maniipule os termos do html em tempo real-->
+    <button type="button" onclick= funcaoMudarTamanho()>Mude o tamanho</button>
+<!--Quando clica no botão chama a função e altera o tamanho
+Onclick tem que usar aspas simples pois estara usando dupla fora -->
+    <button type="button" onclick='document.getElementById("teste").style.display= "none"'>Tira da minha frente!</button>
+    <!--Quando clica apaga tudo-->
+    <button type="button" onclick=funcaoMudarBack()>pinta com meu pinto</button>
+    <button type="button" onclick=conta()>Fazer conta</button>
+</body>
+<script src="script.js"></script>
+</html>
